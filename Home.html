@@ -9,11 +9,11 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
     <title>Document</title>
 </head>
-<body>
+<body style="background-image: linear-gradient(135deg, rgba(186, 186, 186, 0.03) 0%, rgba(186, 186, 186, 0.03) 10%,rgba(133, 133, 133, 0.03) 10%, rgba(133, 133, 133, 0.03) 14%,rgba(38, 38, 38, 0.03) 14%, rgba(38, 38, 38, 0.03) 17%,rgba(93, 93, 93, 0.03) 17%, rgba(93, 93, 93, 0.03) 25%,rgba(80, 80, 80, 0.03) 25%, rgba(80, 80, 80, 0.03) 45%,rgba(239, 239, 239, 0.03) 45%, rgba(239, 239, 239, 0.03) 100%),linear-gradient(135deg, rgba(236, 236, 236, 0.03) 0%, rgba(236, 236, 236, 0.03) 47%,rgba(182, 182, 182, 0.03) 47%, rgba(182, 182, 182, 0.03) 63%,rgba(223, 223, 223, 0.03) 63%, rgba(223, 223, 223, 0.03) 81%,rgba(86, 86, 86, 0.03) 81%, rgba(86, 86, 86, 0.03) 89%,rgba(23, 23, 23, 0.03) 89%, rgba(23, 23, 23, 0.03) 90%,rgba(226, 226, 226, 0.03) 90%, rgba(226, 226, 226, 0.03) 100%),linear-gradient(45deg, rgba(52, 52, 52, 0.03) 0%, rgba(52, 52, 52, 0.03) 31%,rgba(246, 246, 246, 0.03) 31%, rgba(246, 246, 246, 0.03) 63%,rgba(188, 188, 188, 0.03) 63%, rgba(188, 188, 188, 0.03) 71%,rgba(15, 15, 15, 0.03) 71%, rgba(15, 15, 15, 0.03) 87%,rgba(127, 127, 127, 0.03) 87%, rgba(127, 127, 127, 0.03) 93%,rgba(234, 234, 234, 0.03) 93%, rgba(234, 234, 234, 0.03) 100%),linear-gradient(90deg, #ffffff,#ffffff);">
   <div>
 
 <nav class="navbar navbar-expand-lg navbar-dark custom-navbar px-4 fixed-top">
-  <a class="navbar-brand fw-bold" href="#">
+  <a class="navbar-brand fw-bold" href="Home.html">
       <i class="bi bi-airplane-fill me-2"></i>GoTravel</a>
 
   <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
@@ -27,11 +27,11 @@
       </li>
 
       <li class="nav-item">
-        <a class="nav-link mx-3" href="#">Destinations</a>
+        <a class="nav-link mx-3" href="Destinations.html">Destinations</a>
       </li>
 
       <li class="nav-item">
-        <a class="nav-link mx-3" href="#">About</a>
+        <a class="nav-link mx-3" href="About.html">About</a>
       </li>
 
       <li class="nav-item">
@@ -42,15 +42,18 @@
 </nav>
 
 <div class="container-fluid py-5 mt-5">
-<div class="bg-image rounded-4 d-flex align-items-center w-75 mx-auto" style="min-height: 50vh;">
-    <div class="container">
+<div class="bg-vedio-wrapper rounded-4 d-flex align-items-center w-75 mx-auto" style="min-height: 50vh;">
+  <video autoplay muted loop playsinline class="bg-vedio">
+    <source src="images/vedio.mp4" type="video/mp4">
+  </video>
+    <div class="container position-relative z-2">
       <div class="row align-items-center">
 <!-- 
         <div class="col-md-4 mb-3 mt-3 mb-md-0">
           <img src="images/img10.jpeg" class="img-fluid rounded shadow" alt="Travel Image" style="height: 45vh; object-fit: cover;">
         </div> -->
 
-        <div class="col-md-8 text-black ms-5">
+        <div class="col-md-8 text-white ms-5">
           <h3 class="fw-bold">
             Unlock Your Next Great Adventure With Unforgettable Destinations.
           </h3>
@@ -59,7 +62,9 @@
           </p>
 
           <button class="btn explore-btn px-4 py-2 text-white fw-bold rounded-pill border-0">
-            Explore Now
+            <a class="text-decoration-none text-white" href="Destinations.html">
+                          Explore Now
+            </a>
           </button>
         </div>
 
@@ -75,32 +80,166 @@
 
     <div class="row">
 
-        <div class="col-md-3 mb-3">
-            <img src="https://i.pinimg.com/1200x/67/92/d8/6792d8defbc1f3bbdd647cc488ae7fbb.jpg"
+<div class="col-md-3 mb-3 hover-text">
+   <a href="Tajmahal.html"> <img src="https://i.pinimg.com/1200x/c9/56/75/c956758d9fe01053b23e8e23039331d0.jpg"
+        class="img-fluid rounded shadow"
+        style="height: auto; object-fit: cover;"
+    ></a>
+
+    <!-- Text details on hover -->
+    <div class="info text-center">
+        <h6 class="fw-bold mb-1">TAJMAHAL</h6>
+        <p class="small mb-0">Agra,India</p>
+    </div>
+</div>
+
+        <div class="col-md-3 mb-3 hover-text">
+            <img src="https://i.pinimg.com/736x/23/96/db/2396db33302f0bbbe05bd4914b6904d1.jpg"
                  class="img-fluid rounded shadow"
-                 style="height: 50vh; object-fit: cover;">
+                 style="height: auto; object-fit: cover;">
+
+                     <div class="info text-center">
+        <h6 class="fw-bold mb-1">EIFFEL TOWER</h6>
+        <p class="small mb-0">Paris,France</p>
+    </div>
         </div>
 
-        <div class="col-md-3 mb-3">
-            <img src="https://i.pinimg.com/1200x/23/ae/33/23ae33859807b9d1f9174105369e5643.jpg"
+        <div class="col-md-3 mb-3 hover-text">
+            <img src="https://i.pinimg.com/736x/6f/2a/4a/6f2a4af16556e6ab28cd414a78fd1254.jpg"
                  class="img-fluid rounded shadow"
-                 style="height: 50vh; object-fit: cover;">
+                 style="height: auto; object-fit: cover;">
+                     <div class="info text-center">
+        <h6 class="fw-bold mb-1">MUNNAR</h6>
+        <p class="small mb-0">Kerala,India</p>
+    </div>
         </div>
 
-        <div class="col-md-3 mb-3">
-            <img src="https://i.pinimg.com/1200x/4d/54/aa/4d54aae0fa24748886e5bffedd007480.jpg"
+                <div class="col-md-3 mb-3 hover-text">
+            <img src="https://i.pinimg.com/1200x/f5/8f/e1/f58fe1bdbbfaad1819c09bd22a90e573.jpg"
                  class="img-fluid rounded shadow"
-                 style="height: 50vh; object-fit: cover;">
-        </div>
-
-                <div class="col-md-3 mb-3">
-            <img src="https://i.pinimg.com/1200x/6d/86/ae/6d86ae6551dd560a3b6ad3faf3e53457.jpg"
-                 class="img-fluid rounded shadow"
-                 style="width: 250px; height: 50vh; object-fit: cover;">
+                 style="height: auto; object-fit: cover;">
+                     <div class="info text-center">
+        <h6 class="fw-bold mb-1">KASHMIR</h6>
+        <p class="small mb-0">Jammu&Kashmir,India</p>
+    </div>
         </div>
 
     </div>
 </div>
+
+
+<div class="container py-5 mt-5">
+    <div class="row align-items-center">
+
+        <!-- Image -->
+        <div class="col-md-6 mb-4">
+            <img src="https://i.pinimg.com/1200x/8c/f4/6e/8cf46e52991056ef798acf6663556c02.jpg"
+                 class="img-fluid rounded shadow"
+                 style="height: 60vh; object-fit: cover;">
+        </div>
+
+        <!-- Text -->
+        <div class="col-md-6">
+            <h2 class="fw-bold mb-3">About GoTravel</h2>
+            <p class="text-muted">
+                GoTravel helps you explore the world’s most beautiful destinations with ease.  
+                From ancient wonders to modern cities, we bring you the best travel guides,  
+                tips, accommodations, and destination insights — all in one place.
+            </p>
+
+            <p class="text-muted">
+                Whether you’re planning a vacation or seeking your next adventure,  
+                GoTravel ensures you have a smooth, unforgettable experience.
+            </p>
+
+            <a href="#" class="btn btn-dark px-4 py-2 mt-2">Learn More</a>
+        </div>
+
+    </div>
+</div>
+
+
+<!-- Our Services Section -->
+<div class="container py-5 mt-5">
+    <h2 class="text-center fw-bold mb-5" style="letter-spacing: 1px;">Our Services</h2>
+
+    <div class="row g-4 justify-content-center">
+
+        <!-- Flight Booking -->
+        <div class="col-md-4 col-lg-3">
+            <div class="card h-100 shadow-sm border-0 rounded-4 text-center p-3">
+                <div class="mb-3">
+                    <i class="bi bi-airplane-fill" style="font-size: 2.5rem; color: #526ea3;"></i>
+                </div>
+                <h5 class="fw-bold mb-2">Flight Booking</h5>
+                <p class="text-secondary">Book flights to any destination worldwide with best deals and hassle-free service.</p>
+            </div>
+        </div>
+
+        <!-- Hotel Booking -->
+        <div class="col-md-4 col-lg-3">
+            <div class="card h-100 shadow-sm border-0 rounded-4 text-center p-3">
+                <div class="mb-3">
+                    <i class="bi bi-house-fill" style="font-size: 2.5rem; color: #526ea3;;"></i>
+                </div>
+                <h5 class="fw-bold mb-2">Hotel Booking</h5>
+                <p class="text-secondary">Reserve top-rated hotels with ease and confidence for your stay.</p>
+            </div>
+        </div>
+
+        <!-- Tour Packages -->
+        <div class="col-md-4 col-lg-3">
+            <div class="card h-100 shadow-sm border-0 rounded-4 text-center p-3">
+                <div class="mb-3">
+                    <i class="bi bi-map-fill" style="font-size: 2.5rem; color: #526ea3;;"></i>
+                </div>
+                <h5 class="fw-bold mb-2">Tour Packages</h5>
+                <p class="text-secondary">Curated tours with guided experiences for an unforgettable journey.</p>
+            </div>
+        </div>
+
+        <!-- Taxi Booking -->
+        <div class="col-md-4 col-lg-3">
+            <div class="card h-100 shadow-sm border-0 rounded-4 text-center p-3">
+                <div class="mb-3">
+                    <i class="bi bi-car-front-fill" style="font-size: 2.5rem; color: #526ea3;;"></i>
+                </div>
+                <h5 class="fw-bold mb-2">Taxi Booking</h5>
+                <p class="text-secondary">Book taxis and cabs for safe and comfortable travel anywhere.</p>
+            </div>
+        </div>
+
+        <!-- Restaurants -->
+        <div class="col-md-4 col-lg-3">
+            <div class="card h-100 shadow-sm border-0 rounded-4 text-center p-3">
+                <div class="mb-3">
+                    <i class="bi bi-egg-fried" style="font-size: 2.5rem; color: #526ea3;;"></i>
+                </div>
+                <h5 class="fw-bold mb-2">Restaurants</h5>
+                <p class="text-secondary">Discover and book the best restaurants with local delicacies and cuisines.</p>
+            </div>
+        </div>
+
+
+    </div>
+</div>
+
+
+<!-- Why Choose Us - Short Description -->
+<!-- Why Choose Us - Premium Text -->
+<div class="container py-5 mt-3">
+    <h2 class="text-center fw-bold mb-3" style="letter-spacing: 1px; color:#060606;">Why Choose Us</h2>
+    <p class="text-center text-dark-50 mx-auto fw-light" 
+       style="max-width: 700px; font-size: 1.15rem; line-height: 2; letter-spacing: 0.3px;">
+        At <span class="fw-semibold">GoTravel</span>, we provide a seamless all-in-one travel experience—flights, hotels, taxis, restaurants, 
+        and curated tour packages. Trusted, effortless, and backed by <span class="fw-semibold">24/7 support</span>, we make every journey 
+        truly memorable.
+    </p>
+</div>
+
+
+
+
 
 <footer class="bg-dark text-white pt-5 pb-4">
   <div class="container text-md-left">
@@ -108,7 +247,7 @@
     <div class="row">
 
       <div class="col-md-4 col-lg-4 col-xl-4 mx-auto mt-3">
-        <h5 class="text-uppercase mb-4 fw-bold">TravelWorld</h5>
+        <h5 class="text-uppercase mb-4 fw-bold"><i class="bi bi-airplane-fill me-2"></i>GoTravel</a></h5>
         <p>Explore breathtaking destinations, plan your adventure, and create unforgettable memories with us.</p>
       </div>
 
@@ -141,7 +280,9 @@
 
     <div class="text-center">
       <div>
-        <p>© 2025 TravelWorld. All Rights Reserved.</p>
+<p class="text-center mt-4" style="font-weight: 600; letter-spacing: .5px;">
+    Designed by <span style="color:#ff7e5f;">Cybexel</span> © 2025
+</p>
       </div>
     </div>
 
