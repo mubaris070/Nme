@@ -9,6 +9,164 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 
+    <style>
+        .what-we-provide-section {
+            /* background: linear-gradient(135deg, #f8f9ff 0%, #f0f4ff 100%); */
+            padding: 5rem 0;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .what-we-provide-section::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            right: -10%;
+            width: 500px;
+            height: 500px;
+            background: radial-gradient(circle, rgba(59, 130, 246, 0.05) 0%, transparent 70%);
+            border-radius: 50%;
+            pointer-events: none;
+        }
+
+        .service-card {
+            background: white;
+            border: none;
+            border-radius: 1.25rem;
+            transition: all 0.4s cubic-bezier(0.23, 1, 0.320, 1);
+            position: relative;
+            overflow: hidden;
+            height: 100%;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+        }
+
+        .service-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 4px;
+            background: linear-gradient(90deg, var(--card-color), var(--card-color-light));
+            transform: scaleX(0);
+            transform-origin: left;
+            transition: transform 0.4s ease;
+        }
+
+        .service-card:hover::before {
+            transform: scaleX(1);
+        }
+
+        .service-card:hover {
+            transform: translateY(-12px);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+        }
+
+        .service-icon-wrapper {
+            width: 80px;
+            height: 80px;
+            background: var(--card-color);
+            border-radius: 1rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 1.5rem;
+            transition: all 0.4s ease;
+            position: relative;
+        }
+
+        .service-card:hover .service-icon-wrapper {
+            transform: scale(1.1) rotate(5deg);
+            background: var(--card-color-dark);
+        }
+
+        .service-icon {
+            font-size: 2.5rem;
+            color: white;
+        }
+
+        .service-title {
+            font-weight: 700;
+            font-size: 1.15rem;
+            color: #1f2937;
+            margin-bottom: 0.75rem;
+            transition: color 0.3s ease;
+        }
+
+        .service-card:hover .service-title {
+            color: var(--card-color);
+        }
+
+        .service-description {
+            color: #6b7280;
+            font-size: 0.95rem;
+            line-height: 1.6;
+            transition: color 0.3s ease;
+        }
+
+        .service-card:hover .service-description {
+            color: #374151;
+        }
+
+        .card-flight {
+            --card-color: #3b82f6;
+            --card-color-light: #60a5fa;
+            --card-color-dark: #1d4ed8;
+        }
+
+        .card-hotel {
+            --card-color: #f59e0b;
+            --card-color-light: #fbbf24;
+            --card-color-dark: #d97706;
+        }
+
+        .card-tour {
+            --card-color: #10b981;
+            --card-color-light: #34d399;
+            --card-color-dark: #059669;
+        }
+
+        .card-taxi {
+            --card-color: #ef4444;
+            --card-color-light: #f87171;
+            --card-color-dark: #dc2626;
+        }
+
+        .card-restaurant {
+            --card-color: #a855f7;
+            --card-color-light: #c084fc;
+            --card-color-dark: #9333ea;
+        }
+
+        .section-title {
+            /* font-size: 1.5rem; */
+            /* font-weight: 800; */
+            letter-spacing: 1px;
+            color: #1f2937;
+            margin-bottom: 1rem;
+            letter-spacing: -0.5px;
+        }
+
+        .section-subtitle {
+            font-size: 1.1rem;
+            color: #6b7280;
+        }
+
+        @media (max-width: 768px) {
+            .what-we-provide-section {
+                padding: 3rem 0;
+            }
+
+            .section-title {
+                font-size: 1.75rem;
+            }
+
+            .service-card:hover {
+                transform: translateY(-8px);
+            }
+        }
+    </style>
+
     <title>About Us – GoTravel</title>
 
 </head>
@@ -38,23 +196,21 @@
       </li>
 
       <li class="nav-item">
-        <a class="nav-link mx-3" href="#">Contact</a>
+        <a class="nav-link mx-3" href="Contact.html">Contact</a>
       </li>
     </ul>
   </div>
 </nav>
 
-<!-- HERO SECTION -->
 <div class="container py-5 mt-5">
     <div class="text-center mb-5">
         <h2 class="fw-bold" style="letter-spacing: 1px;">About GoTravel</h2>
-        <p class="text-secondary" style="font-size: 1.1rem;">
+        <p class=" text-secondary" style="font-size: 1.1rem;">
             Your trusted travel companion for flights, hotels, tours, taxis, and local experiences worldwide.
         </p>
     </div>
 </div>
 
-<!-- OUR STORY SECTION -->
 <div class="container py-4">
     <div class="row align-items-center g-4">
         <div class="col-md-6">
@@ -74,7 +230,6 @@
     </div>
 </div>
 
-<!-- OUR VISION & MISSION -->
 <div class="container py-5">
     <div class="row g-4 text-center">
 
@@ -97,40 +252,85 @@
     </div>
 </div>
 
-<!-- TEAM OR SERVICES HIGHLIGHT -->
-<div class="container py-5">
-    <h3 class="text-center fw-bold mb-5">What We Provide</h3>
-    <div class="row g-4 text-center">
-        <div class="col-md-4">
-            <i class="bi bi-airplane-fill mb-2" style="font-size: 2rem; color: #526ea3;;"></i>
-            <h5 class="fw-bold">Flight Booking</h5>
+<!-- Enhanced What We Provide section with improved styling and animations -->
+<section class="what-we-provide-section">
+    <div class="container">
+        <div class="text-center mb-5">
+            <h2 class="fw-bold section-title">What We Provide</h2>
+            <p class="section-subtitle">Comprehensive travel solutions for every journey</p>
         </div>
-        <div class="col-md-4">
-            <i class="bi bi-house-fill mb-2" style="font-size: 2rem; color: #526ea3;;"></i>
-            <h5 class="fw-bold">Hotel Booking</h5>
-        </div>
-        <div class="col-md-4">
-            <i class="bi bi-car-front-fill mb-2" style="font-size: 2rem; color: #526ea3;;"></i>
-            <h5 class="fw-bold">Taxi & Transfers</h5>
-        </div>
-        <div class="col-md-4">
-            <i class="bi bi-map-fill mb-2" style="font-size: 2rem; color: #526ea3;;"></i>
-            <h5 class="fw-bold">Tour Packages</h5>
-        </div>
-        <div class="col-md-4">
-            <i class="bi bi-egg-fried mb-2" style="font-size: 2rem; color: #526ea3;;"></i>
-            <h5 class="fw-bold">Restaurants & Dining</h5>
+
+        <div class="row g-4 justify-content-center">
+
+            <div class="col-md-6 col-lg-4 col-xl-3">
+                <div class="card service-card card-flight">
+                    <div class="card-body text-center py-5">
+                        <div class="service-icon-wrapper">
+                            <i class="bi bi-airplane-fill service-icon"></i>
+                        </div>
+                        <h5 class="service-title">Flight Booking</h5>
+                       <p class="section-subtitle">Book flights instantly at the best prices.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6 col-lg-4 col-xl-3">
+                <div class="card service-card card-hotel">
+                    <div class="card-body text-center py-5">
+                        <div class="service-icon-wrapper">
+                            <i class="bi bi-house-fill service-icon"></i>
+                        </div>
+                        <h5 class="service-title">Hotel Booking</h5>
+                        <p class="section-subtitle">Find and reserve hotels with ease.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6 col-lg-4 col-xl-3">
+                <div class="card service-card card-tour">
+                    <div class="card-body text-center py-5">
+                        <div class="service-icon-wrapper">
+                            <i class="bi bi-map-fill service-icon"></i>
+                        </div>
+                        <h5 class="service-title">Tour Packages</h5>
+                         <p class="section-subtitle">Explore curated tours for every traveler.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6 col-lg-4 col-xl-3">
+                <div class="card service-card card-taxi">
+                    <div class="card-body text-center py-5">
+                        <div class="service-icon-wrapper">
+                            <i class="bi bi-car-front-fill service-icon"></i>
+                        </div>
+                        <h5 class="service-title">Taxi Booking</h5>
+                         <p class="section-subtitle">Hire taxis anytime, anywhere instantly.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6 col-lg-4 col-xl-3">
+                <div class="card service-card card-restaurant">
+                    <div class="card-body text-center py-5">
+                        <div class="service-icon-wrapper">
+                            <i class="bi bi-egg-fried service-icon"></i>
+                        </div>
+                        <h5 class="service-title">Restaurants</h5>
+                         <p class="section-subtitle">Discover and book top-rated restaurants.</p>
+                    </div>
+                </div>
+            </div>
+
         </div>
     </div>
-</div>
+</section>
 
-<!-- FOOTER -->
 <footer class="bg-dark text-white pt-5 pb-4">
     <div class="container text-md-left">
         <div class="row">
             <div class="col-md-4 mt-3">
-                <h5 class="text-uppercase mb-4 fw-bold"><i class="bi bi-airplane-fill me-2"></i>GoTravel</a>
-</h5>
+                <h5 class="text-uppercase mb-4 fw-bold"><i class="bi bi-airplane-fill me-2"></i>GoTravel</h5>
                 <p>Explore breathtaking destinations, plan your adventure, and create unforgettable memories with us.</p>
             </div>
             <div class="col-md-4 mt-3">

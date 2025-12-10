@@ -91,3 +91,28 @@
 }
 
 
+
+h5 {
+    font-size: 1rem;
+    letter-spacing: 0.5px;
+}
+
+
+.formbtn{
+  background: linear-gradient(to bottom, #1d5281, #7d99b2);
+  border: none;
+}
+
+.card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 24px rgba(0,0,0,0.15) !important;
+    transition: 0.2s ease;
+}
+.card {
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+
+
+
